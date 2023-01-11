@@ -1,0 +1,96 @@
+body {
+  background-color: black;
+  margin: 0;
+}
+
+#boardPlayable{
+  position: relative;
+  background-color: blueviolet;
+}
+#mainContainer{
+  margin: auto;
+  width:fit-content;
+  display: flex;
+}
+
+#mainControler{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+}
+
+.btn{
+  text-align: center;
+  background-color: #590059ff;
+  border: 2px solid #1a001aff;
+  color: #ffd74cff;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  flex-grow:1
+}
+
+.horizontalSort{display:flex;}
+
+.tileBase{
+  position: absolute;
+  z-index: 0;
+}
+
+.wall{
+  z-index: 8;
+  position: absolute;
+}
+
+.path{
+  z-index: 1;
+  position: absolute;
+}
+
+.wallHilight {
+  z-index: 7;
+  position: absolute;
+}
+
+.goal {
+  position: absolute;
+  z-index: 4;
+}
+
+.eatMe {
+  position: absolute;
+  z-index: 2;
+}
+
+.pack {
+  position: absolute;
+  z-index: 6;
+}
+
+
+.rotate1{transform: rotate(90deg);}
+.rotate2{transform: rotate(180deg);}
+.rotate3{transform: rotate(270deg);}
+
+
+
+.backgroundLayer {z-index: 0;}
+.pathLayer {z-index: 1;}
+.hilightTileLayer {z-index: 2;}
+.clutterLayer {z-index: 3;}
+.objectivesLayer {z-index: 4;}
+.hilightPeiceLayer {z-index: 5;}
+.peiceLayer {z-index: 6;}
+.hilightWallLayer {z-index: 7;}
+.wallsLayer {z-index: 8;}
+
+
+
+.referance {
+  color: #1a001aff;
+  color: #ff00ffff;
+  color: #ffd74cff;
+  color: #c79b00ff;
+  color: #fffd8fff;
+  color: #590059ff
+}
