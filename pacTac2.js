@@ -1,4 +1,4 @@
-const boardSize = 7;
+const boardSize = 5;
 const boardSquare = boardSize * boardSize;
 
 class Co{
